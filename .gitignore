@@ -1,3 +1,7 @@
+# ignore local settings
+local
+local.py
+
 # ignore databases
 *.db
 *.sqlite3
