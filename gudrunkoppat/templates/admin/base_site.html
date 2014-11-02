@@ -1,0 +1,18 @@
+{% extends "admin/base.html" %}
+
+{% block title %}Administration | Gudrun Kopp Website{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Gudrun Kopp Website Administration</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block welcome-msg %}
+    {% if user.username == 'gudrun' %}
+    Welcome goddess
+    {% else %}
+    Welcome
+    {% endif %}
+    <strong>{% firstof user.get_short_name user.get_username %}</strong>.
+{% endblock %}

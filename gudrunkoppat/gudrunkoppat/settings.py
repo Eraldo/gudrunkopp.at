@@ -10,6 +10,8 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from os.path import normpath, join, dirname, abspath
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -82,6 +84,27 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# See: https://docs.djangoproject.com/en/dev/ref/settings/#template-loaders
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+)
+
+########## PATH CONFIGURATION
+# Absolute filesystem path to the Django project configuration directory:
+CONFIG_ROOT = dirname(abspath(__file__))
+
+# Absolute filesystem path to the Django project directory:
+DJANGO_ROOT = dirname(CONFIG_ROOT)
+
+
+# See: https://docs.djangoproject.com/en/dev/ref/settings/#template-dirs
+TEMPLATE_DIRS = (
+    normpath(join(DJANGO_ROOT, 'templates')),
+)
+########## END TEMPLATE CONFIGURATION
 
 
 # import local overwrite settings
