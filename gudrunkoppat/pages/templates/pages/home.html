@@ -77,7 +77,7 @@
         <div class="img-rounded" style="display: inline-block; padding: 20px; background-color: rgba(80,80,150,0.8)">
             <h1 id="logo">Gudrun Kopp</h1>
 
-            <h3><i>"Liebe das Leben - Lebe das Lieben"</i></h3>
+            <h3><i>{{ slogan }}</i></h3>
             <br>
             <a href="#about" class="btn btn-dark btn-lg">Mehr erfahren</a>
         </div>
@@ -94,21 +94,8 @@
 
                 <h2 class="text-center">Meine Person</h2>
                 <hr class="small">
-                <p class="lead" style="text-align: justify;">Nach Abschluss meines Studiums in Salzburg begann mein
-                    beruflicher Weg in der
-                    psychologischen Arbeit
-                    mit Kindern und Familien. Neben meinem Angestelltenverhältnis in den unterschiedlichen
-                    Organisationen, war ich beinahe von Anfang an auch selbständig in der Beratung tätig. Ein
-                    angenehmes
-                    Gesprächsklima, sowie Raum für neue Sichtweisen und Humor sind mir hier wichtig.
-                </p>
-
                 <p class="lead" style="text-align: justify;">
-                    Die berufliche Weiterbildung ist mir ebenso ein Anliegen, wie meine persönliche
-                    Work-Life-Balance.
-                    Ich verbringe gerne Zeit in der Natur, mit Freunden, lege Wert auf gutes Essen und gehe
-                    gerne meiner
-                    Leidenschaft zu Musik, Gesang und Tanz nach.
+                    {{ person|linebreaksbr }}
                 </p>
 
 
@@ -265,11 +252,7 @@
 
                         <p class="lead">
                             <i class="fa fa-child fa-3x pull-left fa-border"></i>
-                            Kinder befinden sich im Aufwachsen in einem ständigen Lernprozess. Manchmal entstehen in der
-                            Schule, Zuhause oder im Freundeskreis Situationen, wo sie trotz eigener Fähigkeiten und
-                            Ressourcen Unterstützung von außen benötigen, um sich positiv weiterentwickeln zu können.
-                            Ich arbeite dem Alter angepasst mit Kindern und Jugendlichen, meist im Einzelsetting, als
-                            Teil einer Familienberatung.
+                            {{ children|linebreaksbr }}
                         </p>
 
                         <p class="text-center">
@@ -336,12 +319,8 @@
 
                         <p class="lead">
                             <i class="fa fa-compass fa-3x pull-left fa-border"></i>
-                            Als Eltern(teil) steht man täglich vor vielen Herausforderungen. Es werden
-                            kleine und größere Entscheidungen getroffen, Aufgaben sind zu erledigen und nebenbei möchte
-                            man die Beziehung zu Kind und Partner/in pflegen. So ist es verständlich, dass manchmal
-                            diese Herausforderung zu einer ÜBER-Forderung wird. Im persönlichen Gespräch können konkrete
-                            Situation besprochen und gemeinsam schrittweise in eine positive Richtung verändert
-                            werden.</p>
+                            {{ parents|linebreaksbr }}
+                        </p>
 
                         <p class="text-center">
                             <a href="#contact" class="btn btn-contact btn-dark btn-lg">Kontakt</a>
@@ -359,9 +338,7 @@
 
                         <p class="lead">
                             <i class="fa fa-eye fa-3x pull-left fa-border"></i>
-                            Supervision ist eine Beratung im beruflichen Kontext, die sowohl einzeln, als
-                            auch in Gruppen/Teams stattfinden kann. Im persönlichen Gespräch werden unterschiedliche
-                            Methoden angewandt, um gemeinsam eine individuelle Lösung zu finden.
+                            {{ supervision|linebreaksbr }}
                         </p>
 
                         <p class="text-center">
@@ -421,10 +398,8 @@
 
                         <p class="lead">
                             <i class="fa fa-shield fa-3x pull-left fa-border"></i>
-                            Coaching ist eine Form der Beratung von Führungskräften, die meist im Einzelsetting
-                            stattfindet. Im persönlichen Gespräch werden unterschiedliche Methoden angewandt, um den
-                            Handlungsspielraum im beruflichen Kontext zu erweitern und herausfordernde Situationen
-                            erfolgreich zu bewältigen. </p>
+                            {{ coaching|linebreaksbr }}
+                        </p>
 
                         <p class="text-center">
                             <a href="#contact" class="btn btn-contact btn-dark btn-lg">Kontakt</a>
@@ -459,8 +434,7 @@
                 <h3>Persönlicher Erstkontakt</h3>
 
                 <p class="lead" style="color: white">
-                    Vor Beginn einer Zusammenarbeit ist es möglich ein erstes persönliches Kennenlernen zu vereinbaren.
-                    Dieses dauert maximal eine halbe Stunde und ist kostenlos.
+                    {{ lead|linebreaksbr }}
                 </p>
                 <a href="#contact" class="btn btn-lg btn-light">Weiter!</a>
             </div>
@@ -476,8 +450,9 @@
                 <h2>Kontakt</h2>
                 <hr class="small">
 
-                <p>Kontaktieren Sie mich telefonisch, per SMS oder per Email. Ich rufe Sie auch gerne
-                    zurück!</p>
+                <p>
+                    {{ contact|linebreaksbr }}
+                </p>
 
                 <div class="col-lg-6 well well-sm">
                     <ul class="list-unstyled">
