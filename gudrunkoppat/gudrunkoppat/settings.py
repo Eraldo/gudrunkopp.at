@@ -109,6 +109,6 @@ TEMPLATE_DIRS = (
 
 # import local overwrite settings
 try:
-    from local import *
+    from .local import *
 except ImportError:
     pass
