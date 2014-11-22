@@ -31,5 +31,3 @@ class HomeView(TemplateView):
         except Block.DoesNotExist:
             block = ""
         return block
-
-

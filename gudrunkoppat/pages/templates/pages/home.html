@@ -479,10 +479,14 @@
                                             <h4 class="modal-title" id="pathModalLabel">Anfahrtsplan</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <img src="{{ STATIC_URL }}pages/img/path/path1.jpg" alt="Lageplan" class="img-responsive"/>
-                                            <img src="{{ STATIC_URL }}pages/img/path/path2.jpg" alt="Lageplan" class="img-responsive"/>
-                                            <img src="{{ STATIC_URL }}pages/img/path/path3.jpg" alt="Lageplan" class="img-responsive"/>
-                                            <img src="{{ STATIC_URL }}pages/img/path/path4.jpg" alt="Lageplan" class="img-responsive"/>
+                                            <img src="{{ STATIC_URL }}pages/img/path/path1.jpg" alt="Lageplan"
+                                                 class="img-responsive"/>
+                                            <img src="{{ STATIC_URL }}pages/img/path/path2.jpg" alt="Lageplan"
+                                                 class="img-responsive"/>
+                                            <img src="{{ STATIC_URL }}pages/img/path/path3.jpg" alt="Lageplan"
+                                                 class="img-responsive"/>
+                                            <img src="{{ STATIC_URL }}pages/img/path/path4.jpg" alt="Lageplan"
+                                                 class="img-responsive"/>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close
@@ -546,7 +550,66 @@
 <footer>
     <div class="col-lg-10 col-lg-offset-1 text-center">
         <hr class="small">
-        <p class="text-muted"><a href="http://www.eraldo.org" target="_blank">Copyright &copy; Eraldo Webdesign 2014</a></p>
+        <p class="text-muted">
+            <a href="http://www.eraldo.org" target="_blank">Copyright &copy; Eraldo Webdesign 2014</a>
+            |
+            <a href="#" data-toggle="modal" data-target="#impressumModal">
+                Impressum
+            </a>
+        </p>
+        <!-- Modal -->
+
+        <div class="modal fade" id="impressumModal" tabindex="-1" role="dialog"
+             aria-labelledby="impressumModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span
+                                aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="impressumModalLabel">Impressum</h4>
+                    </div>
+                    <div class="modal-body" style="text-align: left;">
+                        <span class="lead">Psychologische Praxis</span><br/>
+                        Mag. Gudrun Kopp<br>
+                        Klinische und Gesundheitspsychologin (eingetragen beim Bundesministerium für Gesundheit)<br>
+                        Kinder-, Jugend- und Familienpsychologin (eingetragen beim BÖP)<br>
+                        <br>
+                        Mitglied beim Berufsverband Österreichischer PsychologInnen (www.boep.eu)<br>
+                        <br>
+                        <b>Kontakt</b><br>
+                        <u>Adresse</u>: Zaunerweg ⅚, 4020 Linz<br>
+                        <u>Tel.</u>: +43 680 12 91 369<br>
+                        <u>Email</u>: office@gudrunkopp.at<br>
+                        <u>Web</u>: www.gudrunkopp.at<br>
+                        <br>
+                        <b>Konzept, Text und Fotos</b><br>
+                        © Gudrun Kopp<br>
+                        <br>
+                        <b>Fotos</b><br>
+                        © Sebastian Mayer<br>
+                        <br>
+                        <b>Webdesign und Programmierung</b><br>
+                        © Eraldo Helal<br>
+                        <br/>
+                        <b>Medieninhaber und Herausgeber</b>:<br/>
+                        www.gudrunkopp.at ist die Onlinepräsentation von Mag. Gudrun Kopp, die als Medieninhaberin und
+                        Herausgeberin auftritt. Die inhaltliche Verantwortung für die einzelnen Beiträge bzw. Kommentare
+                        liegt bei der Autorin. Die Website dient zur Information der KlientInnen und KundInnen. Allle
+                        Informationen erfolgen nach besten Wissen und Gewissen.<br/>
+                        <br/>
+                        <b>Urheberrecht und Copyright</b>:<br/>
+                        Das Design, die Fotos sowie der Inhalt dieser Seiten sind urheberrechtlich geschützt. Die
+                        Informationen sind nur für die persönliche Verwendung bestimmt. Jede weitergehende Nutzung ist
+                        ohne die vorherige Zustimmung von Mag. Gudrun Kopp untersagt.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 
